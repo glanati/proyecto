@@ -1,0 +1,24 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "cliente",
+            "otherEntityName": "cliente",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "nombre"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160722221043",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "producto",
+    "pagination": "pagination"
+}
