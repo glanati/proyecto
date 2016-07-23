@@ -19,6 +19,10 @@
         </dd>
     </dl>
 
+    <div ng-repeat="producto in vm.productos">
+        Nombre: {{producto.nombre}}
+    </div>
+
     <button type="submit"
             ui-sref="{{ vm.previousState }}"
             class="btn btn-info">

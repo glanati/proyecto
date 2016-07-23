@@ -140,4 +140,17 @@ public class ProductoResource {
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert("producto", id.toString())).build();
     }
 
+    /**
+     * GET  /productos/cliente/:clienteId : get the "id" producto by cliente
+     *
+     */
+    @RequestMapping(value = "/productos/cliente/{clienteId}",
+        method = RequestMethod.GET,
+        produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public ResponseEntity<List<ProductoDTO>> getProductoByCliente(@PathVariable Long clienteId) {
+        log.debug("REST request to get Producto by clliente : {}", clienteId);
+        List<Producto> productos = productoService.findAllByCliente(clienteId);
+        return new ResponseEntity<>(productoMapper.productosToProductoDTOs(productos), null, HttpStatus.OK);
+    }
 }

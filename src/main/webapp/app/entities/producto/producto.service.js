@@ -2,9 +2,11 @@
     'use strict';
     angular
         .module('proyectoApp')
-        .factory('Producto', Producto);
+        .factory('Producto', Producto)
+        .factory('ProductoByCliente', ProductoByCliente);
 
     Producto.$inject = ['$resource'];
+    ProductoByCliente.$inject = ['$resource'];
 
     function Producto ($resource) {
         var resourceUrl =  'api/productos/:id';
@@ -21,6 +23,14 @@
                 }
             },
             'update': { method:'PUT' }
+        });
+    }
+
+    function ProductoByCliente ($resource) {
+        var resourceUrl = 'api/productos/cliente/:clienteId';
+
+        return $resource(resourceUrl, {}, {
+            'query': { method: 'GET', isArray: true}
         });
     }
 })();

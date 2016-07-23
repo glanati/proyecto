@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;
+import java.util.List;
 
 /**
  * Service Implementation for managing Producto.
@@ -77,5 +78,9 @@ public class ProductoService {
     public void delete(Long id) {
         log.debug("Request to delete Producto : {}", id);
         productoRepository.delete(id);
+    }
+
+    public List<Producto> findAllByCliente(Long clienteId) {
+        return productoRepository.findAllByCliente_Id(clienteId);
     }
 }
