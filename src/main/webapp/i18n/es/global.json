@@ -51,7 +51,7 @@
                 "register": "¿No tienes una cuenta todavía? <a class=\"alert-link\" href=\"\" ng-click=\"vm.register()\">Crea una cuenta</a>"
             },
             "error": {
-                "dontmatch" : "¡La contraseña y la confirmación de contraseña no coinciden!"
+                "dontmatch": "¡La contraseña y la confirmación de contraseña no coinciden!"
             },
             "validate": {
                 "newpassword": {
@@ -74,10 +74,10 @@
             }
         },
         "field": {
-            "id" : "ID"
+            "id": "ID"
         },
         "ribbon": {
-            "dev":"Development"
+            "dev": "Development"
         }
     },
     "entity": {
@@ -121,5 +121,8 @@
         "emailexists": "E-mail is already in use!",
         "idexists": "A new {{entityName}} cannot already have an ID"
     },
-    "footer": "pie de página"
+    "footer": "pie de página",
+    "bootswatch": {
+        "themeSelector": "Theme"
+    }
 }
