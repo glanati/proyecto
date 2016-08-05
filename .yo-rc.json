@@ -12,7 +12,7 @@
     "databaseType": "sql",
     "devDatabaseType": "mysql",
     "prodDatabaseType": "mysql",
-    "searchEngine": "no",
+    "searchEngine": "yes",
     "buildTool": "maven",
     "enableSocialSignIn": true,
     "rememberMeKey": "150b4078b38f728166a74a3e450a61a07b4efd3b",
@@ -23,7 +23,7 @@
     ],
     "jhiPrefix": "jhi",
     "enableTranslation": true,
-    "nativeLanguage": "en",
+    "nativeLanguage": "es",
     "languages": [
       "en",
       "es"

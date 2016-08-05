@@ -2,22 +2,22 @@
     "proyectoApp": {
         "cliente" : {
             "home": {
-                "title": "Clientes",
-                "createLabel": "Create a new Cliente",
-                "createOrEditLabel": "Create or edit a Cliente",
-                "search": "Search for Cliente"
+                "title": "Clients",
+                "createLabel": "Create a new Client",
+                "createOrEditLabel": "Create or edit a Client",
+                "search": "Search for Client"
             },
-            "created": "A new Cliente is created with identifier {{ param }}",
-            "updated": "A Cliente is updated with identifier {{ param }}",
-            "deleted": "A Cliente is deleted with identifier {{ param }}",
+            "created": "A new Client is created with identifier {{ param }}",
+            "updated": "A Client is updated with identifier {{ param }}",
+            "deleted": "A Client is deleted with identifier {{ param }}",
             "delete": {
-                "question": "Are you sure you want to delete Cliente {{ id }}?"
+                "question": "Are you sure you want to delete Client {{ id }}?"
             },
             "detail": {
-                "title": "Cliente"
+                "title": "Client"
             },
-            "nombre": "Nombre",
-            "foto": "Foto"
+            "nombre": "Name",
+            "foto": "Photo"
         }
     }
 }
